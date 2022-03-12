@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #474343;
+            overflow-x: hidden;
+        }
+        header{
+            width: 90%;
+            height: 10%;
+            background-color: #5f5f81;
+            margin: 15px auto;
+        }
+        section{
+            
+            width: 90%;
+            height: 90%;
+            margin: 15px auto;
+            background-color: #5f5f81;
+            
+            overflow: auto; 
+            /*The overflow: auto on the parent prevents 
+            the margin collapse with the div childs*/
+        }
+        section > div{
+            
+            width: 80%;
+            height: 20%;
+            background-color: #a13c3c;
+            color: #EEE;
+            margin: 5px auto;
+        }
+
+        
+        section > div > label, input{
+            display: block;
+            text-align: center;
+            margin: 5px auto;
+        }
+
+
+        /*Advanced Selectors - See about in md archive*/
+        input[type="text"]{
+            border: 2px solid #0000ff;
+            height: 22px;
+            border-radius: 5px;
+        }
+        input[type="text"]:hover{
+            border: 2px solid #606096;
+            background-color: #f0e7e7;
+        }
+        div[id*="test"]{
+            background-color: #7e3232;
+        }
+
+
+        /*Just playing around with some media querie concepts*/
+        @media (max-width: 820px) {
+            header > p::before{
+                content: "This is a Mobile?";
+                color: white;
+            }
+            header{
+                text-align: center;
+            }
+        }
+        @media (min-width: 821px) {
+            header > p::before{
+                content: "This is a Desktop?";
+                color: white;
+                text-align: center;
+            }
+            header{
+                text-align: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p></p>
+    </header>
+    <section>
+        <div id="div1">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div id="div2">
+            <label for="tel">Tel</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div id="div3-test">
+            <label for="submit">Send for us</label>
+            <input name="submit" type="button" value="Submit">
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
