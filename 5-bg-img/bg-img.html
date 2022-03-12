@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: mediumaquamarine;
+        }
+        section{
+            width: 600px;
+            height: 600px;
+            border: 5px dashed red;
+            
+
+            position: relative;
+            left: calc(50% - 300px);
+
+            background-image: url(https://picsum.photos/id/1020/400/500);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="img">
+
+        </div>
+    </section>
+</body>
+</html>

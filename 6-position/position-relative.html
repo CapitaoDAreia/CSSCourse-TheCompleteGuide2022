@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #3b3434;
+            overflow: hidden;
+
+        }
+        section{
+            width: 500px;
+            height: 500px;
+            margin: 5px auto;
+
+            background-color: red;
+            border: 1px solid black;
+        }
+        section > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border: solid 2px black;
+            background-color: blue;
+            margin: 5px;
+        }
+        #other{
+            background-color: green;
+            /*
+            The position relative means that the coordinates passed by will
+            move the element concerning her original position itself.
+            */
+            position: relative;
+            z-index: 4;
+            
+        }
+        #other2{
+            background-color: yellow;
+            position: relative;
+            top: -45px;
+            left: 50px;
+            z-index: 5;
+        }
+        #main{
+            position: relative;
+            top: 60px;
+            left: 50px;
+            z-index: 5; 
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="main">
+            Blue
+        </div>
+        <div id="other">
+            Green
+        </div>
+        <div id="other2">
+            yellow
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELATIVE ABSOLUTE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(80, 80, 107);
+            overflow: hidden;
+        }
+        section{
+            width: 400px;
+            height: 400px;
+
+            background-color: rgb(73, 73, 148);
+            border: 1px solid black;
+
+            margin: 15px auto;
+            position: relative;
+        }
+        section > div{
+            width: 100px;
+            height: 100px;
+
+            background-color: red;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #child2{
+            background-color: green;
+        }
+        #child3{
+            background-color: yellow;
+            position: absolute;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+    </section>
+</body>
+</html>

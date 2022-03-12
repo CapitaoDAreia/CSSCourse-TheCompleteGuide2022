@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(16, 35, 100);
+        }
+        section{
+            display: none;
+            width: 700px;
+            height: 600px;
+            border: 5px solid rgba(128, 128, 128, 0.2);
+            position: relative;
+            left: calc(50% - 350px);
+            top: 10px;
+            background-color: rgba(128, 128, 128, 0.2);
+            
+        }
+        #flag{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+            left: calc(50% - 100px);
+            top: calc(50% - 100px);
+            color: #EEE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="secao">
+        <div id="flag">
+            <p>Clique aqui!</p>
+        </div>
+    </section>
+    <div id="button">
+        <input type="button" value="Clique Para Testar o Display" onclick="teste()">
+    </div>
+</body>
+<script>
+    function teste(){
+        let secao = window.document.getElementById('secao')
+        secao.style.display = "block"
+    }
+</script>
+</html>

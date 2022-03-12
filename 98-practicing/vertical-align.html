@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Align</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        section{
+            width: 100%;
+            height: 50%;
+            border: 1px red solid;
+        }
+        section > div{
+            width: 400px;
+            height: 200px;
+            background-color: red;
+            margin: 15px auto;  
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #specialdiv{
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+        <div>abc <br> abc abc <br> abc abc </div>
+        <div id="specialdiv">def <br> abc def <br> abc ef </div>
+        <div>ghighighighighighi <br> ghighighighighighi <br> ghighighighighighi <br> <br> ghighighighighighi <br></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Rem</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: darkblue;
+        }
+        section{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            color: white;
+
+            position: relative;
+            left: calc(50% - 200px);
+            top: 50px;
+
+            border: 5px black solid;
+            font-size: 1.5em;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            left: calc(50% - 100px);
+            top: 50px;
+            border: black solid 5px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>Olá, mundo!</p>
+        <div>
+            <p>Olá, mundo!</p>
+        </div>
+    </section>
+</body>
+</html>

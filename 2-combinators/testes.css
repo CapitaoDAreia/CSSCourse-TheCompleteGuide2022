@@ -1,0 +1,33 @@
+
+/*ADJACENT SIBLING: 
+all element that comes
+immediately after first element receive the
+atribute
+The elements must have the same parent
+and level
+*/
+h2 + p{
+    color: red;
+}
+
+/*GENERAL SIBLING:
+all elements between first and h4
+The elements must have the same parent
+and level
+*/
+p ~ h4{
+    color: green;
+}
+
+
+/*
+CHILD:
+This attribute aplies to the direct child
+of the first tag. In this case, p tag
+receives the attribute.
+*/
+div > p{
+    color: rgb(146, 62, 206);
+}
+
+
