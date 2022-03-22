@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 6</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #868383;
+            display: flex;
+            justify-content: center;
+        }
+        section{
+            background-color: #575454;
+            width: 90%;
+            height: 90%;
+            border: 3px solid #000;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: repeat(auto-fill, 200px);
+            grid-template-rows:repeat(auto-fill, 200px) ; /*In this way, with a fix value for the cells, the behaviour when shrinks or increase is automatic, that is, the cells will be positioned automatically in the layout.*/
+        }
+        section div:nth-child(1){
+            background-color: red;
+        }
+        section div:nth-child(2){
+            background-color: blue;
+        }
+        section div:nth-child(3){
+            background-color: green;   
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam sed molestiae dolores distinctio corporis! Voluptates, excepturi corporis iste in autem repellendus sint reprehenderit ipsam! Modi veritatis delectus dolor sint.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempora, ad, ipsum voluptates qui alias architecto eaque sint fugit unde eius accusamus eos laboriosam velit dicta natus similique, facere voluptate.
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore, error voluptatem, ut adipisci distinctio officiis odit minus natus quisquam totam, doloribus officia ducimus cum et! Ullam neque maxime illum!
+        </div>
+        <!-- <div></div> -->
+    </section>
+</body>
+</html>
