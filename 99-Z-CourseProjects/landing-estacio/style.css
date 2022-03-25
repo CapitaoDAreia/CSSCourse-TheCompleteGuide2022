@@ -1,0 +1,176 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+/*Art*/
+section:nth-child(1){
+    width: 100%;
+    height: 35%;
+    background-color: #27ABBF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section div:nth-child(1) > h1{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: #EEE;
+}
+section div:nth-child(1) > h2{
+    font-weight: 100;
+    color: #EEE;
+}
+#login-button{
+    width: 100px;
+    height:30px;
+    border-radius: 10px;
+    background-color: #EEE;
+    color: #27ABBF;
+    outline: none;
+    border: none;
+}
+#login-button:hover{
+    background-color: #86c9d3;
+    transition: 1s;
+}
+
+section:nth-child(1) > img{
+    width: 50%;
+}
+section:nth-child(2) div > p{
+    width: 95%;
+    font-size: .9rem;
+    color: #27ABBF;
+    text-align: center;
+}
+section:nth-child(2) div > p:nth-child(3){
+    width: 100%;
+    text-align: center;
+    color: #5f5e5e;
+    font-size: .7rem;
+}
+
+/*Form*/
+section:nth-child(2){
+    width: 100%;
+    max-width:500px;
+    height: 70%;
+    display: grid;
+    grid-template-areas:"hdr hdr hdr"
+                        ". main ."
+                        ". cap ."
+                        "ftr ftr ftr";
+    grid-template-columns: 10% 80% 10%;
+    
+}
+section:nth-child(2) div:nth-child(1){
+    grid-area: hdr;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section:nth-child(2) > form{
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5f5e5e;
+}
+section:nth-child(2) > form input{
+    width: 100%;
+    height: 18%;
+}
+section:nth-child(2) > form label{
+    font-size: .8rem;
+    align-self:center;
+    width: 100%;
+}
+section:nth-child(2) > form p a{
+    font-size: .8rem;
+    text-decoration: none;
+    color:#27ABBF;
+}
+section:nth-child(2) > form p{
+    align-self: flex-end;
+}
+/*Buttons*/
+section:nth-child(2) div:nth-child(3){
+    grid-area: cap;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2) div:nth-child(3) > input:nth-child(1){
+    width: 200px;
+    height: 50px;
+    background-color:#53B36C;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: #EEE;
+    font-weight: bold;
+}
+section:nth-child(2) div:nth-child(3) > input:nth-child(1):hover{
+    background-color:#009640;
+    transition: 1s;
+}
+
+section:nth-child(2) div:nth-child(3) div{
+    font-size: .8rem;
+    color: #868484;
+}
+section:nth-child(2) div:nth-child(3) div span{
+    vertical-align:super;
+    
+}
+
+#outlook-button{
+    height: 40px;
+    border: 1px solid #1150c5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+#outlook-link{
+    margin-top: 10px;
+    padding: 10px;
+    display: inline;
+    text-decoration: none;
+    color: #EEE;
+    background-color: #3268cc;
+    border-radius: 10px;
+}
+#outlook-link:hover{
+    background-color: #2257b9;
+    transition: 1s;
+}
+#outlook-img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+
+
+

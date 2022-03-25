@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, user-scalable=no">
+    <title>SIA - Sistemas de Informações Acadêmicas</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body onload="hour()">
+    <section>
+        <div>
+            <h1>Ensino <strong>Estácio</strong></h1>
+            <h2>Brilhe com + Tecnologia</h2>
+        </div>
+        <img src="./img/background.png" alt="">
+        <a href="#anchor"><input type="button" value="Login" id="login-button"></a>
+    </section>
+    <section>
+        <div>
+            <img src="./img/logo-estacio.png" alt="">
+            <p>SIA - Sistema de Informações Acadêmicas</p>
+            <p id="case">.</p>
+        </div>
+        <form action="">
+            <label for="matricula">Matrícula</label>
+            <input type="number" name="matricula" id="mat" placeholder="  Por favor, digite a sua matrícula">
+            <p><a href="https://sia.estacio.br/sianet/RecuperarMatricula">Não sei ou esqueci a matrícula</a></p>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="pass" placeholder="  Por favor, digite a sua senha">
+            <p><a href="https://sia.estacio.br/sianet/RecuperarMatricula">Não sei ou esqueci a senha</a></p>
+        </form>
+        <div>
+            <input type="button" value="Continuar" id="anchor" onclick="loginAttemp()">
+            <div>
+                <span>_________</span> ou <span>_________</span>
+            </div>
+            <a id="outlook-link" href="https://login.microsoftonline.com/da49a844-e2e3-40af-86a6-c3819d704f49/oauth2/v2.0/authorize?client_id=6e693fd3-b302-4436-b3ec-e673c16620ac&redirect_uri=https%3A%2F%2Fsia.estacio.br%2Fsianet%2Flogon%2Fcallback&response_type=code%20id_token&scope=openid%20email%20profile%20offline_access%20User.Read&state=OpenIdConnect.AuthenticationProperties%3DMu0-RkspxhE1pfhaLnD6NCJ7Ajtn5OTwD1dtxAqvdk_NctbwHBcZ9vAeAtyCZA_uWT5baqq4A-Sk0D2UoXFn5oLZKsrHO6UD2LUJuLc88wp6CfGktaP3QAp76xJj8CIr4_nhDKx74zg0H0dhxS3keSssHlw_aXyzhRoBHAjk_auRJVXZJhAho20hGkUZAsHf-H2KrmV7QEPSeI5xHs4nDmWi8pfmFCk5gkoucupYCewKLHxQcWoAYW98ruqASiq6tUyBghb-mFQt0XXMU4WpqIuneVhYRcsYz66eTJN3nlRKyvbJef0Wjb2UpGHzrYOYFLfnXKefXooNoKb5fRCJ3FQ0i8aMx7q27TScRjg3v0KEQeCFyNpBKx6Nr-W6x8IYAnR9dEXppDG9uqXpAf9fBQ&response_mode=form_post&nonce=637837590823509512.YTUxODM5YWQtNzY3My00MjVlLWJmMjQtODNlZGNhYjhmMTA5ZmUyNDIwNWYtYzcyMS00MWM4LTk3NTctZDQzNDRlNzUyNmUx&post_logout_redirect_uri=https%3A%2F%2Fsia.estacio.br%2Fsianet%2Flogon&x-client-SKU=ID_NET472&x-client-ver=6.11.0.0">
+                <img id="outlook-img" src="./img/outlook.png" alt="">
+                Entrar com e-mail de estudante
+            </a>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
