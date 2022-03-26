@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3b3434;
+    overflow: hidden;
+
+}
+section{
+    width: 500px;
+    height: 500px;
+    margin: 5px 150px 0px 350px;
+
+    background-color: red;
+    border: 1px solid black;
+    position: sticky;
+}
+section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    background-color: blue;
+    margin: 5px;
+
+    
+}
+#other{
+    background-color: green;
+    /*
+    While the position FIXED attend directly to the viewport, the position ABOLUTE
+    attend directly to an positioned parent. In case of non existing an positioned parent,
+    the element with a position ABSOLUTE will attend to the viewport.
+    */
+    position: relative;
+    z-index: 5;
+    width: 98%;
+    
+}
+#other2{
+    background-color: yellow;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    right: calc(50% - 50px);
+    
+}
+#main{
+    position: relative;
+    z-index: 5;
+    
+}

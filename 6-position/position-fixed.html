@@ -5,47 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Fixed</title>
-    <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-
-        body{
-            width: 100vw;
-            height: 100vh;
-            background-color: grey;
-            overflow: hidden;
-        }
-        #container{
-            width: 60%;
-            height: 50%;
-            margin: 5% auto;
-            
-            border: orange solid 3px;
-            background-color: rgb(83, 77, 77);
-            background-image: url(https://picsum.photos/id/237/200/300);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-        }
-        .child{
-            width: 40%;
-            height: 10%;
-            margin: 5px;
-            border: solid 1px red;
-            background-color: rgb(153, 129, 129);
-        }
-        #child1{
-            position: fixed; /*By adding this property, the element is now FIXED to the viewport.*/
-            top: 0;
-            left: 0;
-            bottom: 0;
-            bottom: 0;
-            margin: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="position-fixed.css">
 </head>
 <body>
     <div id="container">

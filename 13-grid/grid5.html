@@ -5,43 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid 5</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100vw;
-            height: 100vh;
-            background-color: #868080;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        section{
-            width: 90%;
-            height: 90%;
-            background-color: #797575;
-            border: 3px solid black;
-            display: grid;
-            grid-template-areas:
-            "hdr hdr hdr hdr"
-            "nav nav main main"
-            "nav nav main main"
-            "lftr lftr lftr lftr";
-            grid-template-rows: 10% 37% 40% 10%;
-            grid-template-columns: 10% 10% 67% 10%;
-            grid-gap: 1% 1%;
-            align-items: stretch; /*Used for positioning into cells Cross Axis - Default value aplied as stretch*/
-            justify-content: stretch; /*Used for positioning into cells Main Axis - Default value aplied as stretch*/
-        }
-        section > div{display: flex; justify-content: center; align-items: center; color: white;}
-        section div:nth-child(1){background-color: red; grid-area: hdr;}
-        section div:nth-child(2){background-color: blue; grid-area: nav; padding: 5px;}
-        section div:nth-child(3){background-color: green; grid-area: main; padding: 40px; flex-direction: column;}
-        section div:nth-child(4){background-color: orange; grid-area: lftr; }
-    </style>
+    <link rel="stylesheet" href="grid5.css">
 </head>
 <body>
     <section>

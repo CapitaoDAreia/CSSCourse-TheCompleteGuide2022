@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+section{
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+}
+section > div{
+    display: block;
+    width: 20%;
+    height: 25%;
+    background-color: green;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+section > div:nth-child(2){
+    display: block;
+    width: 20%;
+    height: 25%;
+    background-color: yellow;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+}
+section > div:nth-child(3){
+    display: block;
+    width: 20%;
+    height: 25%;
+    background-color: orange;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}
+section > input{
+    width: 99%;
+    height: 5%;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    margin-left: 1px;
+}
+section > input:hover{
+    background-color: rgb(58, 58, 184);
+    width: 97%;
+    margin-left: 5px;
+}
+section > input:active{
+    background-color: red;
+}

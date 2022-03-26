@@ -5,60 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100vw;
-            height: 100vh;
-            background-color: #cbcbee;
-            overflow: hidden;
-        }
-        section{
-            width: 80%;
-            height: 80%;
-            background-color: #767683;
-            color: #EEE;
-            margin: 50px auto;
-            
-            display: grid;
-
-            /*Used to set the number of columns and rows, each one of the unit measurement refers to an element*/
-            grid-template-columns: 33.33% 33.33% 33.33%;
-            grid-template-rows:  33.33% 33.33% 33.33%;
-        }
-        section div:nth-child(1){
-            background-color: red;
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        
-        section div:nth-child(2){
-            background-color: #949415;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-        
-        section div:nth-child(3){  
-            background-color: green;
-            /*This is for positioning the elements inside the grid, check moxilla's dev tools*/
-            grid-row-start: 2;
-            grid-row-end: 3;
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }
-        
-        section div:nth-child(4){
-            background-color: blue;
-            grid-column-start: 1;
-            grid-column-end: 4;
-            
-        
-        }
-    </style>
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
     <header>
