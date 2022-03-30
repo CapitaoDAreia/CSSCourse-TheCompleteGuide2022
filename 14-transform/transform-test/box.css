@@ -1,0 +1,88 @@
+/*General*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*General Style and Display*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #01012e;
+    display: flex;
+    justify-content: center;
+}
+section{
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    background-color: #EEE;
+    display: grid;
+    grid-template-areas:"left center right"
+                        "left2 center2 right2"
+                        "left3 center3 right3";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    perspective: 200px;
+}
+/*Childs style and display*/
+section > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+    text-align: center;
+}
+section div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    width: 400px;
+    height: 201px;
+    background-color: blue;
+    grid-area: center;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+
+    
+    
+}
+section div:nth-child(2){
+    width: 406px;
+    height: 201px;
+    justify-self: center;
+    align-self: center;
+    background-color: red;
+    grid-area: left2;
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg) rotate(0deg);
+    z-index: 2;
+
+    
+}
+section div:nth-child(3){
+    width: 400px;
+    height: 201px;
+    justify-self: center;
+    background-color: green;
+    grid-area: center3;
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+
+}
+section div:nth-child(4){
+    width: 406px;
+    height: 201px;
+    justify-self: center;
+    align-self: center;
+    background-color: purple;
+    grid-area: right2;
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg) rotate(0deg);
+
+}
+section div:nth-child(5){
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+    background-color: grey;
+    grid-area: center2;
+
+}

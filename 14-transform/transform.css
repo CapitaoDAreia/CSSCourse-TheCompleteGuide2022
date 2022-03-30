@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #02021f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 1600px;
+    height: 1600px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+section div:nth-child(2){
+    display: grid;
+    grid-template-areas:"first1 second1 third1"
+                        "first2 second2 third2"
+                        "first3 second3 third3";
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 30px);
+    align-items: stretch;
+}
+div > input{
+    border: 1px solid red;
+    background-color: black;
+    color: #EEE;
+    border-radius: 10px;
+}
+div > input:hover{
+    background-color: #202020;
+}
+div > input:active{
+    background-color: #f30202;
+}
+div input:nth-child(1){
+    grid-area: second1;
+}
+div input:nth-child(2){
+    grid-area: third2;
+}
+div input:nth-child(3){
+    grid-area: second3;
+}
+div input:nth-child(4){
+    grid-area: first2;
+}
+div input:nth-child(5){
+    grid-area: second2;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section div:nth-child(1){
+    background-color: blue;
+    width: 800px;
+    height: 800px;
+}
+section div div:nth-child(1){
+    background-color: yellow;
+    width: 400px;
+    height: 400px;
+}
+section div div div:nth-child(1){
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    transform: translateY(0px);
+}

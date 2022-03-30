@@ -1,0 +1,84 @@
+/*General*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*General Style and Display*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #01012e;
+    display: flex;
+    justify-content: center;
+}
+section{
+    width: 700px;
+    height: 700px;
+    background-color: #EEE;
+    display: grid;
+    grid-template-areas:"left center right"
+                        "left2 center2 right2"
+                        "left3 center3 right3";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    perspective: 100px;
+}
+/*Childs style and display*/
+section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEE;
+}
+section div:nth-child(1){
+    background-color: blue;
+    grid-area: left;
+    transform:rotateY(0deg) rotateX(13deg) rotateZ(0deg);
+    z-index: 2;
+
+
+    /*Styles and behaviours of transform*/
+    transform-style: preserve-3d;
+    
+}
+section div:nth-child(2){
+    background-color: red;
+    grid-area: left3;
+    transform:rotateY(0deg) rotateX(13deg) rotateZ(0deg);
+    z-index: 0;
+    
+    
+    
+}
+section div:nth-child(3){
+    background-color: green;
+    grid-area: center2;
+    /* width: 600px;
+    height: 600px;
+    z-index: 20;
+    justify-self: center;
+    align-self: center; */
+
+    /*Translate approaches the element*/
+    transform: translateZ(3.3rem);
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 1px -20px 0px 0px green;
+    z-index: 1;
+    
+}
+section div:nth-child(4){
+    background-color: purple;
+    grid-area: right;
+    transform:rotateY(0deg) rotateX(13deg) rotateZ(0deg);
+    z-index: 2;
+    
+}
+section div:nth-child(5){
+    background-color: grey;
+    grid-area: right3;
+    transform:rotateY(0deg) rotateX(13deg) rotateZ(0deg);
+    z-index: 0;
+    
+}
