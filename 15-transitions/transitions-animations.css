@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#060657, #000);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+body > input{
+    width: 100px;
+    height: 40px;
+}
+section{
+    width: 800px;
+    height: 800px;
+    background-color: #d8d7d7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+section > div{
+    opacity: 0;
+    margin-top: 0px;
+    width: 200px;
+    height: 200px;
+    border: #d8d7d7 1px solid;
+    border-radius: 10px;
+    background-color: #060657;
+    
+}
+.appear{
+    margin-right: 500px;
+    margin-top: 500px;
+    opacity: 1;
+    transition: 
+    opacity 1s, 
+    margin-right 1s linear 1s,
+    margin-top 1s linear 2s;
+
+}
+.desappear{
+    margin-top: 0px;
+    margin-right: 0px;
+    opacity: 0;
+    transition: opacity 1s linear 3s, margin-top 1s linear 1s, margin-right 1s linear 2s ;
+    
+}
