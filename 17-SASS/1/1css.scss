@@ -1,0 +1,45 @@
+@import './1css-variables.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: map-get($all-colors, main)/*map*/;
+    //including a mixin that adds the display flex configuration
+    @include display-flex();
+    flex: {
+        direction: row;
+    }
+    section{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: map-get($all-colors, secondary)/*map*/;
+        border: $border-default;
+        text-align: center;
+        //default font size value times three
+        font-size: $default-font-size * 3;
+    }
+
+    //calls the mediaquery added in the variables archive
+    @include media-min-width(1000px){
+        section{
+            width: 50%;
+            height: 50%;
+        }
+    }
+}
+
+.for-all-class{
+    color: map-get($all-colors, main);
+    font-weight: bold;
+}
+.text{
+    //inherit another class
+    @extend .for-all-class;
+    padding: $default-font-size * 1.5;
+}

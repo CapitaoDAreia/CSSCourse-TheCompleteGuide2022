@@ -1,0 +1,35 @@
+// $main-color: #020238;
+// $secondary-color: #fcfcfc;
+// $third-color: #000000;
+
+
+// a variable CALLED MAP with all colors
+$all-colors: (main: #08088b, secondary: #fcfcfc, third: #000000 );
+
+
+//Variable with a list of values as a value
+$border-default: solid 5px map-get($all-colors, third);
+
+//Size variables
+$default-font-size: 1rem;
+
+
+
+//mixin that comports a pre configured display flex property
+//Also is possible add an media query 
+@mixin display-flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// mixin that adds a media query with a parameter as the value
+// then, inside the media, have a content that will be defined
+// when the 'media-min-width' is called with the @include function
+
+        //name--------parameter
+@mixin media-min-width($width) {
+    @media(min-width: $width){
+        @content
+    }
+}
